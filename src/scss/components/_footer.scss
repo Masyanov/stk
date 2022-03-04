@@ -1,0 +1,26 @@
+.footer {
+  &__container {
+  @include flex-v-center;
+  height: 100%;
+}
+  color: #585858;
+  height: 121px;
+  background: #fff;
+}
+.footer__nav {
+  width: 100%;
+  margin-right: 80px;
+  @include flex-all-sb;
+}
+.footer__btn {
+  padding: 0 26px;
+  height: 49px;
+  font-size: 16px;
+  color: #fff;
+  background: #104766;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.fa-phone {
+  margin-right: 9px;
+}

@@ -1,0 +1,40 @@
+.contacts {
+    @include flex-all-center;
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+    &__item:not(:last-child) {
+      margin-right: 29px;
+    }
+    p, .email {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    .email {
+      text-decoration: underline;
+    }
+    .phone {
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+    .fa-envelope {
+      margin-right: 7px;
+    }
+}
+
+footer .contacts {
+  &__item:not(:last-child) {
+    margin-right: 29px;
+  }
+  p, .email {
+  color: #2B94C5;
+  }
+  .phone {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .fa-envelope {
+    margin-right: 7px;
+  }
+}
