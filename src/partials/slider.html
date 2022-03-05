@@ -1,21 +1,39 @@
-<section class="slider">
-  <div class="container swiper">
-    <div class="fullscreen-bg">
-      <video loop="" muted="" autoplay="" class="fullscreen-bg__video">
-          <source src="img/strojka.mp4" type="video/mp4">
-          <source src="img/strojka.webm" type="video/webm">
-      </video>
-  </div>
+<section class="hero">
+
+  <!--    <div class="fullscreen-bg">-->
+  <!--      <video loop="" muted="" autoplay="" class="fullscreen-bg__video">-->
+  <!--        <source src="video/strojka.mp4" type="video/mp4">-->
+  <!--        <source src="video/strojka.webm" type="video/webm">-->
+  <!--      </video>-->
+  <!--    </div>-->
+
+  <div class="swiper hero-slider">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">
+        <div class="hero__bg">
+          <!--          TODO тут будет фон (не важно видео или картинка). Сделать затемнение фона-->
+          <div class="fullscreen-bg">
+            <video loop="" muted="" autoplay="" class="fullscreen-bg__video">
+              <source src="video/strojka.mp4" type="video/mp4">
+              <source src="video/strojka.webm" type="video/webm">
+            </video>
+          </div>
+        </div>
+        <div class="container hero__container">
+          <h2>Тут контент</h2>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="hero__bg">
+          <!--  TODO тут будет фон (не важно видео или картинка). Сделать затемнение фона -->
+        </div>
+        <div class="container hero__container">
+          <h2 style="color: #000">Тут контент 2</h2>
+        </div>
+      </div>
     </div>
-
-    <div class="swiper-pagination"></div>
-
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
+    <div class="swiper-button-next hero-button-next"></div>
+    <div class="swiper-button-prev hero-button-prev"></div>
+    <div class="swiper-pagination hero-pagination"></div>
   </div>
 </section>

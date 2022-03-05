@@ -31,10 +31,12 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 p {
   margin: 0;
   padding: 0;
 }
+
 ul {
   list-style-type: none;
 }
@@ -113,7 +115,53 @@ ul {
 .page--ios .dis-scroll {
   position: relative;
 }
+
 ul {
-   padding: 0;
-   margin: 0;
- }
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+  }
+
+  &__title {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 66px 0;
+    text-transform: uppercase;
+
+    &::before {
+      z-index: -1;
+      position: absolute;
+      content: '';
+      width: 79px;
+      height: 79px;
+      border-radius: 50%;
+      left: -25px;
+      top: -15px;
+      background: #061C32;
+      opacity: 0.3;
+    }
+
+    &--black {
+      color: #3E3E3E;
+
+      &::before {
+        background: #D6D6D6;
+      }
+    }
+  }
+}
+
+.fa-phone {
+  margin-right: 9px;
+}

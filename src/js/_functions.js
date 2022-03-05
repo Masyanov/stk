@@ -50,11 +50,24 @@ console.log(mobileCheck())
 // });
 
 // Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
+const heroSlider = new Swiper(".hero-slider", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".hero-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".hero-button-next",
+    prevEl: ".hero-button-prev",
+  },
+});
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';

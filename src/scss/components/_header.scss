@@ -1,17 +1,20 @@
 .header {
-  &__container {
-  @include flex-v-center;
-  height: 100%;
-}
   color: aliceblue;
   height: 121px;
   background: linear-gradient(158.79deg, #173852 -3.43%, #2F91BC 71.13%, #173852 148.86%);
+
+  &__container {
+    @include flex-v-center;
+    height: 100%;
+  }
 }
+
 .header__nav {
   width: 100%;
   margin-right: 80px;
   @include flex-all-sb;
 }
+
 .header__btn {
   padding: 0 26px;
   height: 49px;
@@ -21,6 +24,4 @@
   border-radius: 6px;
   white-space: nowrap;
 }
-.fa-phone {
-  margin-right: 9px;
-}
+

@@ -1,35 +1,42 @@
 .form-map {
-
   background: linear-gradient(131.56deg, #173852 -6.49%, #2F91BC 42.45%, #173852 93.49%);
+
+  &__container {
+    height: 790px;
+    display: flex;
+  }
+
 }
-.form-map__container {
-  height: 790px;
-  display: flex;
-}
+
 .form__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.form__wrapper h1{
+
+.form__wrapper h1 {
   font-size: 40px;
   color: #fff;
 }
-.form__wrapper p{
+
+.form__wrapper p {
   font-size: 18px;
   color: #fff;
 }
+
 .map__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
 }
+
 .map__wrapper h2 {
   position: relative;
   padding-left: 20px;
   color: #fff;
 }
+
 .map__wrapper span {
   position: absolute;
   content: '';
